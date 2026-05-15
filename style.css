@@ -42,6 +42,30 @@ body, html {
   color: #333;
 }
 
+/* Effet au survol */
+.main-menu li:nth-child(4) {
+  border: 2px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.main-menu li:nth-child(4):hover {
+  background: #333; /* Fond noir au survol */
+  border-color: #333;
+}
+
+.main-menu li:nth-child(4) a {
+  color: #333;
+  font-weight: bold;
+}
+
+.main-menu li:nth-child(4):hover a {
+  color: #fff; /* Texte blanc au survol */
+}
+
+
 /* --- Footer --- */
 #footer {
   background: #f9f9f9;
