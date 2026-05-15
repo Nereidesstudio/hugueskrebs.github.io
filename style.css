@@ -10,6 +10,151 @@ body, html {
 }
 
 .text-column {
+  width: 13%;
+  padding: 20px;
+  background: #f9f9f9;
+  overflow-y: auto;
+}
+
+.image-column {
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.image-column img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+.menu {
+  margin-top: 20px;
+}
+.menu a {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Effet au survol */
+.main-menu li:nth-child(4) {
+  border: 2px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.main-menu li:nth-child(4):hover {
+  background: #333; /* Fond noir au survol */
+  border-color: #333;
+}
+
+.main-menu li:nth-child(4) a {
+  color: #333;
+  font-weight: bold;
+}
+
+.main-menu li:nth-child(4):hover a {
+  color: #fff; /* Texte blanc au survol */
+}
+
+
+/* --- Footer --- */
+#footer {
+  background: #f9f9f9;
+  padding: 40px 0 20px;
+  margin-top: 40px;
+}
+
+.footer-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.contact-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.3em;
+  color: #000;
+}
+
+.contact-info p {
+  margin: 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  font-size: 0.9em;
+  color: #777;
+}
+
+.copyright p {
+  margin: 0;
+}
+
+.social-links ul.social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.social-links ul.social li a {
+  color: #777;
+  text-decoration: none;
+}
+
+.social-links ul.social li a:hover {
+  color: #000;
+}
+
+/* --- Adaptation pour mobile --- */
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.text-column {
   width: 30%;
   padding: 20px;
   background: #f9f9f9;
